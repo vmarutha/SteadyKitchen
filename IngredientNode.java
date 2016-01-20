@@ -1,6 +1,6 @@
 /**
  Node class with a node having two fields, an Ingredient object and a pointer to the next IngredientNode
- @version 1.0 2012-03-02
+ @version 1.0 2015-03-02
  @author Vinoth Maruthalingam
  */
 public class IngredientNode
