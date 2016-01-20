@@ -1,1 +1,3 @@
-Execute the MainMenu class first.
+Execute MainClass
+
+Author: Vinoth Maruthalingam
