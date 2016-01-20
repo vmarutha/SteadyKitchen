@@ -1,6 +1,6 @@
 /**
  The class responsible for most of the functions in the program 
- @version 1.0 2012-03-02
+ @version 1.0 2015-03-02
  @author Vinoth Maruthalingam
  */
 import java.util.Scanner;
