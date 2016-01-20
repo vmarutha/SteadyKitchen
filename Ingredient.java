@@ -1,6 +1,6 @@
 /**
  Super class to the Diary, Fats, Fruits, Grains, Meats, Sweets, and Vegetable subclasses
- @version 1.0 2012-03-02
+ @version 1.0 2015-03-02
  @author Vinoth Maruthalingam
  */
 public class Ingredient
