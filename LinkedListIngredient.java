@@ -1,6 +1,6 @@
 /**
  A LinkedListIngredient class in which a LinkedListIngredient object can be created
- @version 1.0 2012-03-02
+ @version 1.0 2015-03-02
  @author Vinoth Maruthalingam
  */
 public class LinkedListIngredient
