@@ -1,6 +1,6 @@
 /**
  A subclass of the Ingredient superclass
- @version 1.0 2012-03-02
+ @version 1.0 2015-03-02
  @author Vinoth Maruthalingam
  */
 public class Vegetable extends Ingredient 
