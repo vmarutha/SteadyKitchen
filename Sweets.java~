@@ -1,0 +1,42 @@
+import java.util.StringTokenizer;
+
+public class Sweets extends Ingredient
+{
+  public double fatContent;
+  
+  public Meats(String name, String foodGroup, double fatContent, double mass, String color, int stock)
+  {
+    super(name, foodGroup, mass, color, stock);
+    this.fatContent = fatContent;
+  }
+  
+  public Meats(String name, String foodGroup, double fatContent)
+  {
+    super(name, foodGroup);
+    this.fatContent = fatContent;
+  }
+  
+  public String getFatContent()
+  {
+    return this.fatContent;
+  }
+  
+  public static void main(String args[])
+  {
+  Meats salami = new Meats("apple",  "fruits", "pork");
+  salami.setMass(50);
+  System.out.println(salami.toString());
+  
+  System.out.println(tokenCounter("HI" + "\t" + "HI"));
+  }
+  
+  public String toString()
+  {
+    return ("Name: " + this.getName() + '\n' +
+            "Food Group: " + this.getFoodGroup() + '\n' +
+            "Color: " + this.getColor() + '\n' +
+            "Mass: " + this.getMass() + '\n' +
+            "Stock: " + this.getStock() + '\n' + 
+            "Fat Content: " + this.getFatContent() + '\n' + 
+            this.displayKeyFeatures());
+  }

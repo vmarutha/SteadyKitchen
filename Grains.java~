@@ -1,0 +1,34 @@
+import java.util.StringTokenizer;
+
+public class Grains extends Ingredient
+{
+  public double fibreContent;
+  
+  public Grains(String name, String foodGroup, double fibreContent, double mass, String color, int stock)
+  {
+    super(name, foodGroup, mass, color, stock);
+    this.fibreContent = fibreContent;
+  }
+  
+  public Grains(String name, String foodGroup, double fibreContent)
+  {
+    super(name, foodGroup);
+    this.fibreContent = fibreContent;
+  }
+  
+  public double getFibreContent()
+  {
+    return this.fibreContent;
+  }
+    
+  public String toString()
+  {
+    return ("Name: " + this.getName() + '\n' +
+            "Food Group: " + this.getFoodGroup() + '\n' +
+            "Color: " + this.getColor() + '\n' +
+            "Mass: " + this.getMass() + '\n' +
+            "Stock: " + this.getStock() + '\n' + 
+            "Fat Content: " + this.getFibreContent() + '\n' + 
+            this.displayKeyFeatures());
+  }
+}

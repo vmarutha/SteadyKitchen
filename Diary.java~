@@ -1,0 +1,32 @@
+public class Diary extends Ingredient 
+{
+   public double fatContent;
+  
+  public Diary(String name, String foodGroup, double fatContent, double mass, String color, int stock)
+  {
+    super(name, foodGroup, mass, color, stock);
+    this.fatContent = fatContent;
+  }
+  
+  public Diary(String name, String foodGroup, double fatContent)
+  {
+    super(name, foodGroup);
+    this.fatContent = fatContent;
+  }
+  
+  public double getfatContent()
+  {
+    return this.fatContent;
+  }
+    
+  public String toString()
+  {
+    return ("Name: " + this.getName() + '\n' +
+            "Food Group: " + this.getFoodGroup() + '\n' +
+            "Color: " + this.getColor() + '\n' +
+            "Mass: " + this.getMass() + '\n' +
+            "Stock: " + this.getStock() + '\n' + 
+            "Fat Content: " + this.getfatContent() + '\n' + 
+            this.displayKeyFeatures());
+  }
+}

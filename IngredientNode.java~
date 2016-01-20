@@ -1,0 +1,31 @@
+public class IngredientNode
+{
+  Ingredient ingredient;
+  Node next;
+  
+  public Node(Ingredient ingredient, Node n)
+  {
+    this.ingredient = ingredient;
+    this.next = n;
+  }
+  
+  public int getIngredient()
+  {
+    return this.ingredient;
+  }
+  
+  public Node getNext()
+  {
+    return next;
+  }
+  
+  public void setIngredient(Ingredient ingredient)
+  {
+    this.ingredient = ingredient;
+  }
+  
+  public void setNext(Node r)
+  {
+    this.next = r;
+  }
+}

@@ -1,0 +1,32 @@
+public class Vegetable extends Ingredient 
+{
+   public double carbsContent;
+  
+  public Vegetable(String name, String foodGroup, double carbsContent, double mass, String color, int stock)
+  {
+    super(name, foodGroup, mass, color, stock);
+    this.carbsContent = carbsContent;
+  }
+  
+  public Vegetable(String name, String foodGroup, double carbsContent)
+  {
+    super(name, foodGroup);
+    this.carbsContent = carbsContent;
+  }
+  
+  public double getCarbsContent()
+  {
+    return this.carbsContent;
+  }
+    
+  public String toString()
+  {
+    return ("Name: " + this.getName() + '\n' +
+            "Food Group: " + this.getFoodGroup() + '\n' +
+            "Color: " + this.getColor() + '\n' +
+            "Mass: " + this.getMass() + '\n' +
+            "Stock: " + this.getStock() + '\n' + 
+            "Carbs Content: " + this.getCarbsContent() + '\n' + 
+            this.displayKeyFeatures());
+  }
+}

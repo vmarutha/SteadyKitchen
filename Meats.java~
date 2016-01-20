@@ -1,0 +1,17 @@
+public class Meats extend Ingredient
+{
+  public String parent;
+  
+  public Fruits(String name, String foodGroup, boolean healthiness)
+  {
+    super(name, foodGroup);
+    this.healthiness = healthiness;
+  }
+  
+  public static void main(String args[])
+  {
+  Fruits apple = new Fruits("apple",  "fruits", true);
+  //System.out.println(apple.instanceOf(Ingredient));  
+  
+  }
+}

@@ -1,0 +1,36 @@
+Asian Pear
+Fruits	32
+Green
+3453
+2342.0
+Healthy	Crunchy
+Pineapple
+Fruits	54
+Yellow
+4535
+45645.0
+Sour	Healthy	Sweet
+Chocolate Milk
+Diary	67
+brown
+234
+2342.0
+tasty	vitamins
+Apple Pie
+Sweets	100
+Brown
+20
+13.0
+Crispy	Baked	Warm
+Bricks
+Meats	House
+Hard
+12
+54.0
+Hard	Concrete
+35234523
+Fats	232.0
+3453453
+4354
+4534.0
+34543	34534

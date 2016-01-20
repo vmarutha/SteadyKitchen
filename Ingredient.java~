@@ -1,0 +1,120 @@
+// Object class for the ingredient object
+public class Ingredient
+{
+  String name;
+  String foodGroup;
+  String color;
+  double mass;
+  int stock;
+  String[] features;
+  
+  public Ingredient(String name, String foodGroup, double mass, String color, int stock)
+  {
+    this.name = name;
+    this.foodGroup = foodGroup;
+    this.mass = mass;
+    this.color = color;
+    this.stock = stock;
+    this.features = null;
+  }
+  
+  public Ingredient(String name, String foodGroup)
+  {
+    this.name = name;
+    this.foodGroup = foodGroup;
+    mass = 0;
+    color = null;
+    stock = 0;
+    this.features = null;
+  }
+  
+  //Accessor methods
+  public String getName()
+  {
+    return this.name;
+  }
+  
+  public String getFoodGroup()
+  {
+    return this.foodGroup;
+  }
+  
+  public String getColor()
+  {
+    return this.color;
+  }
+  
+  public double getMass()
+  {
+    return this.mass;
+  }
+  
+  public int getStock()
+  {
+    return this.stock;
+  }
+  
+  public String[] getFeatures()
+  {
+    return this.features;
+  }
+  
+  // Mutator methods
+  
+  public void setName(String name)
+  {
+    this.name = name;
+  }
+  
+  public void setFoodGroup(String foodGroup)
+  {
+    this.foodGroup = foodGroup;
+  }
+  
+  public void setColor(String color)
+  {
+    this.color = color;
+  }
+  
+  public void setMass(double mass)
+  {
+    this.mass = mass;  
+  }
+  
+  public void setStock(int stock)
+  {
+    this.stock = stock;
+  }
+  
+  public void setKeyFeatures(String[] features)
+  {
+    this.features = features;
+  } 
+  
+  public String toString()
+  {
+    return ("Name: " + this.getName() + '\n' +
+            "Food Group: " + this.getFoodGroup() + '\n' +
+            "Color: " + this.getColor() + '\n' +
+            "Mass: " + this.getMass() + '\n' +
+            "Stock: " + this.getStock() + '\n' + 
+            this.displayKeyFeatures());
+  }
+  
+  public String displayKeyFeatures()
+  {
+    String listOfKeyFeatures = "";
+    if (this.features == null)
+    {
+      listOfKeyFeatures = "No key features";
+    }
+    else
+    {
+      for (int i = 0; i < this.features.length; i++)
+      {
+        listOfKeyFeatures = (listOfKeyFeatures + "Key Features: " + this.features[i] + '\n');
+      }
+    }    
+    return listOfKeyFeatures;
+  }
+}
